@@ -1,11 +1,9 @@
-import Header from "./Components/Header";
-import Hero from "./Components/Hero";
+import HeroCars from "./Components/HeroCars";
 
 function App() {
   return (
     <div>
-      <Header />
-      <Hero />
+      <HeroCars />
     </div>
   );
 }
