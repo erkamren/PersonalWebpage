@@ -1,18 +1,18 @@
 import React from "react";
-import { FaGithub, FaLinkedin, FaEnvelope, FaFilePdf } from "react-icons/fa";
+import { FaGithub, FaLinkedin, FaRegEnvelope, FaFilePdf } from "react-icons/fa";
 import CurvedLoop from "./CurvedLoop";
 import TextType from "./TextType";
 
 export default function Portfolio() {
   return (
-    <div className="h-screen w-full bg-white opacity-100 [background-image:repeating-radial-gradient(circle_at_0_0,transparent_0,#ffffff_23px),repeating-linear-gradient(#75bdaa55,#75bdaa)]">
+    <div className="relative h-screen w-full bg-white opacity-100 [background-image:repeating-radial-gradient(circle_at_0_0,transparent_0,#ffffff_23px),repeating-linear-gradient(#75bdaa55,#75bdaa)]">
       <CurvedLoop
         marqueeText="React.js ◆ Next.js ◆ Tailwind CSS ◆ TypeScript ◆ Angular ◆ Node.js ◆ MongoDB ◆ Figma ◆ Accessible UI ◆ "
         speed={3}
         curveAmount={500}
         direction="right"
         interactive={true}
-        className="bg-black -z-10"
+        className="-z-10 pointer-events-none"
       />
       <div className="mx-16 2xl:mx-auto max-w-7xl lg:py-36 py-16">
         <div className="inline-flex items-center gap-2 rounded-full bg-pink-100 px-4 py-1.5 text-md lg:text-lg font-semibold text-pink-700">
@@ -38,7 +38,9 @@ export default function Portfolio() {
         />
         <div className="mt-8 flex flex-wrap items-center gap-3">
           <a
-            href="#projeler" // dış link ise target="_blank" rel="noopener" ekleyebilirsin
+            href="/CV_MuhammedErkamEren.pdf"
+            target="_blank"
+            rel="noopener"
             aria-label="CV’ime göz at"
             className="group relative inline-flex rounded-full focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-400/70 focus-visible:ring-offset-2"
           >
@@ -48,7 +50,7 @@ export default function Portfolio() {
             {/* Asıl buton */}
             <span className="relative z-10 inline-flex items-center gap-4 rounded-full border border-white/10 bg-slate-900/80 px-6 py-3 text-white backdrop-blur-md shadow-lg shadow-blue-600/10 transition duration-300 hover:shadow-blue-400/30">
               <span className="font-medium">Check out my CV</span>
-              <FaFilePdf className="text-blue-200 transition-transform duration-200 w-5 h-5" />
+              <FaFilePdf className="transition-transform duration-200 w-5 h-5" />
 
               {/* Hover'da hafif ışıltı çizgisi */}
               <span className="pointer-events-none absolute inset-0 overflow-hidden rounded-full">
@@ -58,11 +60,11 @@ export default function Portfolio() {
           </a>
         </div>
 
-        <div className="mt-6 ml-6 flex items-center gap-4 text-slate-600 z-50">
+        <div className="mt-6 ml-6 flex items-center gap-4 text-slate-600 relative z-50 pointer-events-auto">
           <a href="mailto:erkamren@gmail.com">
-            <FaEnvelope
+            <FaRegEnvelope
               size={44}
-              className="text-gray-700 hover:scale-110 transition-all duration-300"
+              className="text-indigo-700 hover:scale-110 transition-all duration-300"
             />
           </a>
           <a href="https://github.com/erkameren">
