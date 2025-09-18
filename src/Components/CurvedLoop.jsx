@@ -54,9 +54,18 @@ const CurvedLoop = ({
   useEffect(() => {
     if (!spacing || !ready) return;
     let frame = 0;
-    const step = () => {
+    let lastTime = performance.now();
+
+    const step = (currentTime) => {
+      const deltaTime = currentTime - lastTime;
+      lastTime = currentTime;
+
       if (!dragRef.current && textPathRef.current) {
-        const delta = dirRef.current === "right" ? speed : -speed;
+        // 60fps'te istediğimiz hızı elde etmek için deltaTime'ı normalize ediyoruz
+        const normalizedDelta = (deltaTime / 16.67) * speed; // 16.67ms = 60fps
+        const delta =
+          dirRef.current === "right" ? normalizedDelta : -normalizedDelta;
+
         const currentOffset = parseFloat(
           textPathRef.current.getAttribute("startOffset") || "0"
         );
