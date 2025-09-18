@@ -15,7 +15,7 @@ export default function Portfolio() {
         className="-z-10 pointer-events-none"
       />
       <div className="mx-16 2xl:mx-auto max-w-7xl lg:py-36 py-16">
-        <div className="inline-flex items-center gap-2 rounded-full bg-pink-100 px-4 py-1.5 text-md lg:text-lg font-semibold text-pink-700">
+        <div className="ml-1 inline-flex items-center gap-2 rounded-full bg-pink-100 px-4 py-1.5 text-md lg:text-lg font-semibold text-pink-700 shadow-md">
           <span className="relative flex h-3 w-3">
             <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-pink-400 opacity-75"></span>
             <span className="relative inline-flex rounded-full h-3 w-3 bg-pink-500"></span>
@@ -23,18 +23,18 @@ export default function Portfolio() {
           Frontend Developer
         </div>
 
-        <h1 className="mt-4 text-4xl font-extrabold tracking-tight text-slate-800 sm:text-5xl lg:text-6xl">
+        <h1 className="mt-4 text-4xl font-extrabold tracking-tight text-slate-800 sm:text-5xl lg:text-6xl drop-shadow-lg">
           M. Erkam EREN
         </h1>
         <TextType
           text={
             "I design clear, welcoming interfaces that feel good to use. I focus on the details so everything works for everyone, including people using assistive tech. Bright visuals, quick load times, and accessibility built in."
           }
-          typingSpeed={75}
+          typingSpeed={100}
           pauseDuration={1500}
           showCursor={true}
           cursorCharacter="|"
-          className="mt-6 text-lg lg:text-2xl max-w-xl text-slate-600 bg-white border border-slate-200 rounded-lg p-4"
+          className="mt-6 text-lg lg:text-2xl max-w-xl text-slate-600 bg-white border shadow-lg rounded-lg p-4"
         />
         <div className="mt-8 flex flex-wrap items-center gap-3">
           <a
@@ -50,7 +50,7 @@ export default function Portfolio() {
             {/* Asıl buton */}
             <span className="relative z-10 inline-flex items-center gap-4 rounded-full border border-white/10 bg-slate-900/80 px-6 py-3 text-white backdrop-blur-md shadow-lg shadow-blue-600/10 transition duration-300 hover:shadow-blue-400/30">
               <span className="font-medium">Check out my CV</span>
-              <FaFilePdf className="transition-transform duration-200 w-5 h-5" />
+              <FaFilePdf className="text-blue-100 transition-transform duration-200 w-5 h-5" />
 
               {/* Hover'da hafif ışıltı çizgisi */}
               <span className="pointer-events-none absolute inset-0 overflow-hidden rounded-full">
@@ -64,19 +64,19 @@ export default function Portfolio() {
           <a href="mailto:erkamren@gmail.com">
             <FaRegEnvelope
               size={44}
-              className="text-indigo-700 hover:scale-110 transition-all duration-300"
+              className="text-indigo-700 drop-shadow-lg hover:scale-110 transition-all duration-300"
             />
           </a>
           <a href="https://github.com/erkameren">
             <FaGithub
               size={44}
-              className="text-black hover:scale-110 transition-all duration-300"
+              className="text-black drop-shadow-lg hover:scale-110 transition-all duration-300"
             />
           </a>
           <a href="https://www.linkedin.com/in/muhammederkameren">
             <FaLinkedin
               size={44}
-              className="text-blue-700 hover:scale-110 transition-all duration-300"
+              className="text-blue-700 drop-shadow-lg hover:scale-110 transition-all duration-300"
             />
           </a>
         </div>
