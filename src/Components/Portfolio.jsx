@@ -67,7 +67,7 @@ export default function Portfolio() {
               className="text-indigo-700 w-8 h-8 sm:w-15 sm:h-15 drop-shadow-lg hover:scale-110 transition-all duration-300"
             />
           </a>
-          <a href="https://github.com/erkameren">
+          <a href="https://github.com/erkamren">
             <FaGithub
               size={44}
               className="text-black w-8 h-8 sm:w-15 sm:h-15 drop-shadow-lg hover:scale-110 transition-all duration-300"
