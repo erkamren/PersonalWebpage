@@ -1,12 +1,11 @@
-import HeroRiver from "./Components/HeroRiver";
-import HeroBrushes from "./Components/HeroBrushes";
-import HeroLines from "./Components/HeroLines";
-import HeroSpaghetti from "./Components/HeroSpaghetti";
-import HeroCars from "./Components/HeroCars";
-import HeroSnakes from "./Components/HeroSnakes";
+import Portfolio from "./Components/Portfolio";
 
 function App() {
-  return <div></div>;
+  return (
+    <div>
+      <Portfolio />
+    </div>
+  );
 }
 
 export default App;
