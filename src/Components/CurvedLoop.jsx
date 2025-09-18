@@ -111,7 +111,7 @@ const CurvedLoop = ({
 
   return (
     <div
-      className={`absolute bottom-44 flex items-center justify-center w-full font-mono z-0 ${
+      className={`absolute sm:bottom-56 bottom-32 flex items-center justify-center w-full font-mono z-0 ${
         interactive ? "" : "pointer-events-none"
       } ${className ?? ""}`}
       style={{ visibility: ready ? "visible" : "hidden", cursor: cursorStyle }}
@@ -121,7 +121,7 @@ const CurvedLoop = ({
       onPointerLeave={endDrag}
     >
       <svg
-        className="select-none w-full overflow-visible block aspect-[100/12] text-8xl md:text-4xl font-medium uppercase leading-none"
+        className="select-none w-full overflow-visible block aspect-[100/12] text-7xl sm:text-8xl md:text-4xl font-medium uppercase leading-none"
         viewBox="0 0 1440 120"
       >
         <text

@@ -14,7 +14,7 @@ export default function Portfolio() {
         interactive={true}
         className="-z-10 pointer-events-none"
       />
-      <div className="mx-16 2xl:mx-auto max-w-7xl lg:py-36 py-16">
+      <div className="mx-8 2xl:mx-auto max-w-7xl sm:py-36 py-8">
         <div className="ml-1 inline-flex items-center gap-2 rounded-full bg-pink-100 px-4 py-1.5 text-md lg:text-lg font-semibold text-pink-700 shadow-md">
           <span className="relative flex h-3 w-3">
             <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-pink-400 opacity-75"></span>
@@ -23,7 +23,7 @@ export default function Portfolio() {
           Frontend Developer
         </div>
 
-        <h1 className="mt-4 text-4xl font-extrabold tracking-tight text-slate-800 sm:text-5xl lg:text-6xl drop-shadow-lg">
+        <h1 className="mt-4 text-3xl font-extrabold tracking-tight text-slate-800 sm:text-5xl lg:text-6xl drop-shadow-lg">
           M. Erkam EREN
         </h1>
         <TextType
@@ -34,7 +34,7 @@ export default function Portfolio() {
           pauseDuration={1500}
           showCursor={true}
           cursorCharacter="|"
-          className="mt-6 text-lg lg:text-2xl max-w-xl text-slate-600 bg-white border shadow-lg rounded-lg p-4"
+          className="mt-6 text-md sm:text-2xl max-w-xl text-slate-600 bg-white border shadow-lg rounded-lg p-4"
         />
         <div className="mt-8 flex flex-wrap items-center gap-3">
           <a
@@ -42,7 +42,7 @@ export default function Portfolio() {
             target="_blank"
             rel="noopener"
             aria-label="CV’ime göz at"
-            className="group relative inline-flex rounded-full focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-400/70 focus-visible:ring-offset-2"
+            className="group text-sm sm:text-base relative inline-flex rounded-full focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-blue-400/70 focus-visible:ring-offset-2"
           >
             {/* Dış parıltı/çerçeve */}
             <span className="pointer-events-none absolute -inset-[2px] rounded-full bg-gradient-to-r from-blue-400 via-blue-500 to-blue-700 opacity-80 blur-[6px] transition duration-300 group-hover:opacity-100 group-hover:blur-md"></span>
@@ -60,28 +60,28 @@ export default function Portfolio() {
           </a>
         </div>
 
-        <div className="mt-6 ml-6 flex items-center gap-4 text-slate-600 relative z-50 pointer-events-auto">
+        <div className="mt-4 ml-8 sm:mt-6 sm:ml-6 flex items-center gap-4 text-slate-600 relative z-50 pointer-events-auto">
           <a href="mailto:erkamren@gmail.com">
             <FaRegEnvelope
               size={44}
-              className="text-indigo-700 drop-shadow-lg hover:scale-110 transition-all duration-300"
+              className="text-indigo-700 w-8 h-8 sm:w-15 sm:h-15 drop-shadow-lg hover:scale-110 transition-all duration-300"
             />
           </a>
           <a href="https://github.com/erkameren">
             <FaGithub
               size={44}
-              className="text-black drop-shadow-lg hover:scale-110 transition-all duration-300"
+              className="text-black w-8 h-8 sm:w-15 sm:h-15 drop-shadow-lg hover:scale-110 transition-all duration-300"
             />
           </a>
           <a href="https://www.linkedin.com/in/muhammederkameren">
             <FaLinkedin
               size={44}
-              className="text-blue-700 drop-shadow-lg hover:scale-110 transition-all duration-300"
+              className="text-blue-700 w-8 h-8 sm:w-15 sm:h-15 drop-shadow-lg hover:scale-110 transition-all duration-300"
             />
           </a>
         </div>
       </div>
-      <div className="absolute right-0 bottom-0 aspect-square w-[min(90vw,420px)] overflow-hidden sm:w-[420px] lg:w-[520px]">
+      <div className="absolute right-0 bottom-0 aspect-square w-[280px] overflow-hidden sm:w-[420px] lg:w-[520px]">
         <img
           src="/photo.png"
           alt={`M. Erkam EREN portre illüstrasyonu`}
