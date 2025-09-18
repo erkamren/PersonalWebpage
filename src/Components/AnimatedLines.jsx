@@ -71,7 +71,7 @@ const AnimatedLines = () => {
         fill="none"
         strokeLinecap="round"
         strokeLinejoin="round"
-        stroke="rgba(156, 163, 75, 0.4)"
+        stroke="rgba(156, 13, 75, 0.4)"
       >
         {/*
           "d" parametreleri Cubic Bézier (C) komutları ile daha karmaşık hale getirildi.

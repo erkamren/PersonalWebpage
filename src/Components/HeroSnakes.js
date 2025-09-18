@@ -42,38 +42,6 @@ const HeroSnakes = () => {
             <stop offset="70%" stopColor="#f97316" stopOpacity="0.6" />
             <stop offset="100%" stopColor="#f97316" stopOpacity="0" />
           </linearGradient>
-
-          {/* Fırça dokusu için filtreler */}
-          <filter id="texture1" x="-20%" y="-20%" width="140%" height="140%">
-            <feTurbulence
-              type="fractalNoise"
-              baseFrequency="0.02 0.05"
-              numOctaves="3"
-              seed="0"
-            />
-            <feDisplacementMap in="SourceGraphic" scale="8" />
-            <feGaussianBlur stdDeviation="1.5" />
-          </filter>
-          <filter id="texture2" x="-20%" y="-20%" width="140%" height="140%">
-            <feTurbulence
-              type="fractalNoise"
-              baseFrequency="0.03 0.04"
-              numOctaves="3"
-              seed="1"
-            />
-            <feDisplacementMap in="SourceGraphic" scale="10" />
-            <feGaussianBlur stdDeviation="1.2" />
-          </filter>
-          <filter id="texture3" x="-20%" y="-20%" width="140%" height="140%">
-            <feTurbulence
-              type="fractalNoise"
-              baseFrequency="0.01 0.03"
-              numOctaves="4"
-              seed="2"
-            />
-            <feDisplacementMap in="SourceGraphic" scale="12" />
-            <feGaussianBlur stdDeviation="1.8" />
-          </filter>
         </defs>
 
         {/* Çeşitli yönlerden gelen fırça izleri */}
@@ -83,7 +51,6 @@ const HeroSnakes = () => {
           strokeWidth="60"
           strokeLinecap="round"
           fill="none"
-          filter="url(#texture1)"
           style={{
             strokeDasharray: "400 1600",
             strokeDashoffset: "2000",
@@ -99,7 +66,6 @@ const HeroSnakes = () => {
           strokeWidth="55"
           strokeLinecap="round"
           fill="none"
-          filter="url(#texture2)"
           style={{
             strokeDasharray: "400 1600",
             strokeDashoffset: "2000",
@@ -115,7 +81,6 @@ const HeroSnakes = () => {
           strokeWidth="70"
           strokeLinecap="round"
           fill="none"
-          filter="url(#texture1)"
           style={{
             strokeDasharray: "400 1600",
             strokeDashoffset: "2000",
@@ -131,7 +96,6 @@ const HeroSnakes = () => {
           strokeWidth="65"
           strokeLinecap="round"
           fill="none"
-          filter="url(#texture3)"
           style={{
             strokeDasharray: "400 1600",
             strokeDashoffset: "2000",
@@ -147,7 +111,6 @@ const HeroSnakes = () => {
           strokeWidth="50"
           strokeLinecap="round"
           fill="none"
-          filter="url(#texture2)"
           style={{
             strokeDasharray: "400 1600",
             strokeDashoffset: "2000",
