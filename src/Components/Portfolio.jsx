@@ -5,7 +5,7 @@ import TextType from "./TextType";
 
 export default function Portfolio() {
   return (
-    <div className="relative h-screen w-full bg-white opacity-100 [background-image:repeating-radial-gradient(circle_at_0_0,transparent_0,#ffffff_23px),repeating-linear-gradient(#75bdaa55,#75bdaa)]">
+    <div className="relative h-screen w-full [background-image:repeating-radial-gradient(circle_at_0_0,transparent_0,#ffffff_23px),repeating-linear-gradient(#75bdaa55,#75bdaa)]">
       <CurvedLoop
         marqueeText="React.js ◆ Next.js ◆ Tailwind CSS ◆ TypeScript ◆ Angular ◆ Node.js ◆ MongoDB ◆ Figma ◆ Accessible UI ◆ "
         speed={3}
@@ -60,27 +60,37 @@ export default function Portfolio() {
           </a>
         </div>
 
-        <div className="mt-4 ml-8 sm:mt-6 sm:ml-6 flex items-center gap-4 text-slate-600 relative z-50 pointer-events-auto">
+        <div className="mt-4 ml-4 sm:mt-6 sm:ml-6 flex items-center gap-4 text-slate-600 relative z-50 pointer-events-auto">
           <a href="mailto:erkamren@gmail.com">
             <FaRegEnvelope
               size={44}
-              className="text-indigo-700 w-8 h-8 sm:w-15 sm:h-15 drop-shadow-lg hover:scale-110 transition-all duration-300"
+              className="text-indigo-700 drop-shadow-lg hover:scale-110 transition-all duration-300"
             />
           </a>
           <a href="https://github.com/erkamren">
             <FaGithub
               size={44}
-              className="text-black w-8 h-8 sm:w-15 sm:h-15 drop-shadow-lg hover:scale-110 transition-all duration-300"
+              className="text-black drop-shadow-lg hover:scale-110 transition-all duration-300"
             />
           </a>
           <a href="https://www.linkedin.com/in/muhammederkameren">
             <FaLinkedin
               size={44}
-              className="text-blue-700 w-8 h-8 sm:w-15 sm:h-15 drop-shadow-lg hover:scale-110 transition-all duration-300"
+              className="text-blue-700 drop-shadow-lg hover:scale-110 transition-all duration-300"
             />
           </a>
         </div>
       </div>
+      {/* <div className="absolute right-0 top-0">
+        <img
+          src="/signature.svg"
+          alt={`M. Erkam EREN imzası`}
+          className="h-14 w-auto m-2 object-cover"
+          width={600}
+          height={600}
+          loading="eager"
+        />
+      </div> */}
       <div className="absolute right-0 bottom-0 aspect-square w-[280px] overflow-hidden sm:w-[420px] lg:w-[520px]">
         <img
           src="/photo.png"
